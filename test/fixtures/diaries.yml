@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+#one:
+#  id: 1
+#  title: Ruby on Railsで日記を作成しました。
+#  body: 面談イベントを控えていたので成果物として日記を作成しました。
+
+#two:
+#  id: 2
+#  title: 今日の天気
+#  body: 今日は雨が降った後、虹が出ていて綺麗だった。.exit

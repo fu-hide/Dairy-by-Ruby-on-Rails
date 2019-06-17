@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>日記一覧</h1>
+
+<table>
+  <thead>
+    <tr>
+      
+      <th>タイトル</th>
+      <th>投稿日時</th>
+      <th>更新日時</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @diaries.each do |diary| %>
+      <tr>
+        
+        <td><%= link_to diary.title, diary %></td>
+        <td><%= diary.created_at %></td>
+        <td><%= diary.updated_at %></td>
+        <td><%= link_to '詳細', diary %></td>
+        <td><%= link_to '編集', edit_diary_path(diary) %></td>
+        <td><%= link_to '削除', diary, method: :delete, data: { confirm: '本当に削除しますか？' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to '日記を新規作成', new_diary_path %>
