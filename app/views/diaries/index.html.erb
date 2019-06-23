@@ -1,11 +1,22 @@
 <p id="notice"><%= notice %></p>
-
 <h1>日記一覧</h1>
-<img src = "/cat.jpg">
 <table>
+  <style type = "text/css">
+    table{
+     -webkit-text-stroke: 0.1px #FFF;
+    text-stroke: 0.1px #FFF;
+    color:black;
+    }
+  </style>
   <thead>
     <tr>
-      
+    <style type = "text/css">
+    th{
+    -webkit-text-stroke: 0.1px #FFF;
+    text-stroke: 0.1px #FFF;
+    color:black;
+    }
+    </style>
       <th>タイトル</th>
       <th>投稿日時</th>
       <th>更新日時</th>
@@ -16,7 +27,14 @@
   <tbody>
     <% @diaries.each do |diary| %>
       <tr>
-        
+      <style type = "text/css">
+        td{
+          -webkit-text-stroke: 0.1px #FFF;
+          text-stroke: 0.1px #FFF;
+          color:black;
+        }
+        </style>
+   
         <td><%= link_to diary.title, diary %></td>
         <td><%= diary.created_at %></td>
         <td><%= diary.updated_at %></td>
